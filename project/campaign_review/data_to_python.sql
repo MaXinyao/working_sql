@@ -42,6 +42,7 @@ FROM
         create_date
         ,first_country
         ,campaign_name
+        
         ,AVG(ua_cost) ua_cost
         ,SUM(CASE WHEN living_days = 0 THEN retended ELSE 0 END) AS newusers 
         ,SUM(CASE WHEN living_days = 1 THEN retended ELSE 0 END) AS r1users 
