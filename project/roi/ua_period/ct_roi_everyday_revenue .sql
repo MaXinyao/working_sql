@@ -36,4 +36,3 @@ LEFT JOIN
 ON a.user_pseudo_id = u.user_pseudo_id
 AND a.date = @run_date
 
-

@@ -1,0 +1,33 @@
+digraph Tree {
+node [shape=box, style="rounded", color="black", fontname=helvetica] ;
+edge [fontname=helvetica] ;
+0 [label="sessions <= 1.5\ngini = 0.5\nsamples = 18898\nvalue = [19666, 10284]"] ;
+1 [label="os_version_low <= 0.5\ngini = 0.5\nsamples = 10481\nvalue = [9153, 7493]"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="duration <= 0.1\ngini = 0.5\nsamples = 9627\nvalue = [8132, 7145]"] ;
+1 -> 2 ;
+3 [label="gini = 0.1\nsamples = 661\nvalue = [960, 80]"] ;
+2 -> 3 ;
+4 [label="gini = 0.5\nsamples = 8966\nvalue = [7172, 7065]"] ;
+2 -> 4 ;
+5 [label="sessions <= 0.5\ngini = 0.4\nsamples = 854\nvalue = [1021, 348]"] ;
+1 -> 5 ;
+6 [label="gini = 0.0\nsamples = 297\nvalue = [456, 6]"] ;
+5 -> 6 ;
+7 [label="gini = 0.5\nsamples = 557\nvalue = [565, 342]"] ;
+5 -> 7 ;
+8 [label="skip_guide <= 0.5\ngini = 0.3\nsamples = 8417\nvalue = [10513, 2791]"] ;
+0 -> 8 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+9 [label="sessions <= 3.5\ngini = 0.3\nsamples = 7086\nvalue = [8908, 2273]"] ;
+8 -> 9 ;
+10 [label="gini = 0.4\nsamples = 4410\nvalue = [5187, 1721]"] ;
+9 -> 10 ;
+11 [label="gini = 0.2\nsamples = 2676\nvalue = [3721, 552]"] ;
+9 -> 11 ;
+12 [label="sessions <= 2.5\ngini = 0.4\nsamples = 1331\nvalue = [1605, 518]"] ;
+8 -> 12 ;
+13 [label="gini = 0.5\nsamples = 530\nvalue = [556, 291]"] ;
+12 -> 13 ;
+14 [label="gini = 0.3\nsamples = 801\nvalue = [1049, 227]"] ;
+12 -> 14 ;
+}
